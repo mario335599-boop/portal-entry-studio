@@ -8,6 +8,10 @@
 
 GitHub初心者向けの新規リポジトリ作成手順は [GITHUB_SETUP.md](GITHUB_SETUP.md) を参照してください。公開先はご自身の `portal-entry-studio` リポジトリを想定しています。
 
+公開版: <https://mario335599-boop.github.io/portal-entry-studio/>
+
+ソースコード: <https://github.com/mario335599-boop/portal-entry-studio>
+
 ## 起動
 
 Node.js 22.12以降、pnpm 11を使用します。サーバーは開発・配信時のみで、運用に独自バックエンドは不要です。
@@ -47,7 +51,7 @@ pnpm test:e2e      # 本番ビルドに対するChromeブラウザテスト
 
 `dist/` の**中身**をPages配信用ブランチのルートへ配置し、Pagesでそのブランチを指定する方法も使えます。`index.html` と `assets/` と `vendor/` をまとめて配置してください。`vendor/` は約39MBで、OCRに必要です。
 
-この作業フォルダーには公開先リポジトリ・GitHub認証が未設定のため、初期納品時点では実際のGitHub Pagesへの送信はしていません。
+このリポジトリではGitHub Actions方式のPages配信を有効化しています。`main` ブランチへのpush後、テストとビルドに成功した場合のみ公開版が更新されます。HTTPSは強制されています。
 
 ## 主な操作
 

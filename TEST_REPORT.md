@@ -25,7 +25,7 @@
 | URL設定 | クエリ等の認証情報を含む可能性のあるURLを拒否。固定URLを保存・復元 |
 | 保存容量不足 | IndexedDBのQuotaExceededErrorを模擬。未保存表示と再試行後の保存 |
 | 通信 | ワークフロー実行中、同一サイト以外へのリクエストがないことを検証 |
-| GitHub Pages相当のパス | `/portal-entry-studio/` でHTML・JS・PDF Worker・日本語PDF解析が動作 |
+| GitHub Pages | `/portal-entry-studio/` でHTML・JS・CSS・PDF Worker・日本語OCR辞書がHTTP 200で配信。HTTPS強制を確認 |
 | レスポンシブ | 幅390pxで画面全体に横方向のはみ出しがないことを確認 |
 | 画面の目視確認 | ダッシュボード、日本語PDF照合、画像PDFのOCR結果、モバイル画面を確認 |
 | ビルド再現性 | lockfileを使用したオフライン再インストールと本番ビルドが成功 |
@@ -48,7 +48,7 @@
 
 ## 検証の範囲外
 
-- 実際のGitHubアカウントへの配信は、新規リポジトリURLの受領後に行います。
+- 公開版は `https://mario335599-boop.github.io/portal-entry-studio/` へ配信済みです。GitHub Actionsのテスト・ビルド・Pagesデプロイが成功しています。
 - SUUMO / at homeへの実入力・下書き保存・物件公開は本アプリの機能ではなく、今回実行していません。
 - 実案件のあらゆる販売図面レイアウトでの精度は保証できません。運用開始時はTEST MODEで原本照合してください。
 - Chrome以外のブラウザ・iOS実機は未検証です。
